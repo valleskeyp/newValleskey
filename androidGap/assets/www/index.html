@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html> 
+<head>
+<meta charset="utf-8" />
+<meta name="HandheldFriendly" content="True"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+<link rel="stylesheet" href="launchStyle.css"  />
+<title>Launch Page</title>
+</head>
+<body>
+<div data-role="page" id="launch">
+	<div data-role="header" data-position="fixed">
+		<h1>Peter Valleskey</h1>
+		<h3>AVF 3/2012</h3>
+	</div>
+	<div data-role="content">
+		<ul data-role="listview" data-divider-theme="d">
+			<li data-role="list-divider"></li>
+			<li>
+				<h1>Crud Apps</h1>
+				<p><a data-role="button" data-rel="external" data-inline="true" href="http://valleskeyp.cloudant.com/adventure/_design/adv/index.html" target="_blank">Original App</a></p>
+				<p><a data-role="button" data-rel="external" data-inline="true" href="http://valleskeyp.cloudant.com/adventure2/_design/adv/index.html" target="_blank">Revised App</a></p>
+			</li>
+			<li data-role="list-divider"></li>
+			<li>
+				<h1>Native Feature Demos</h1>
+				<p><a id="example1" data-role="button" data-inline="true" href="#">Notification Example</a></p>
+				<p><a id="example2" data-role="button" data-inline="true" href="#geo">Geolocation Example</a></p>
+			</li>
+			<li data-role="list-divider"></li>
+			<li>
+				<h1>Discussion posts and videos</h1>
+				<p><a data-role="button" data-inline="true" href="#discussions">Discussions</a></p>
+			</li>
+			<li data-role="list-divider"></li>
+		</ul>
+	</div>
+</div>
+<div data-role="page" id="geo" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed">
+        <h1>Peter Valleskey</h1>
+        <h3>AVF 3/2012</h3>
+    </div>
+    <div data-role="content">
+        <div><p>Current User Location</p></div>
+        <div id="map"></div>
+    </div>
+</div>
+    
+<div data-role="page" id="discussions" data-add-back-btn="true">
+    <div data-role="header" data-position="fixed">
+		<h1>Peter Valleskey</h1>
+		<h3>AVF 3/2012</h3>
+	</div>
+	<div data-role="content">
+        <div data-role="collapsible-set" data-content-theme="d">
+            <div data-role="collapsible" data-collapsed="true">
+                <h3>Week 1 Discussion</h3>
+                <p>1) Compass, accelerometer, camera, audio, geo-location, video, and more (especially with phonegap).</p>
+                <p>2) Of these most don't seem to fit well with a basic crud functioning app, but the camera might be useful in my app.</p>
+                <p>3) In regards to workflow, I just read/watch all materials for the week as early as possible.  Then I can gauge decently how much time I will need.  After that it is simply getting started and sticking to it at a regular pace, keeping distractions to a minimum.</p>
+                <p>4) The design of my app right now lends itself well to what it intends to accomplish.  It's a pretty straightforward contacts book (with it's own spin), so it doesn't really need distractions.</p>             
+                <p>5) As my old app is working, I'll probably leave it alone.  As for revising my app, I look forward to figuring out the best features to incorporate into it.</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>Week 2 Discussion</h3>
+                <p>1) What I can do in my webpages is keeping the code clean and using the right elements where they belong.  Elements like alt tags, headings, lists, forms (label inputs with meaning!), ect.  Elements the reader goes through should be able to cue the user on what to do next, without nearby visual aids.</p>
+				<p>2) One thing that I saw in a video was how dynamic content was relayed to the user.  If new content is injected, there is a way for that content to be read to, or alert, the user.  But one thing to keep in mind is that if content is updated in a rapid way, it could result in lost information to the user, or even a garbled mess.  To work with this, content should be updated in a way that the user will be able to absorb new information at their own pace, resulting in all information being available to each type of user.</p>
+				<p>3) Refreshing Braille displays are one type of device made for accessability.  The work they do is giving a physical way for people to read (through Braille) what is currently on a computer screen.  I saw a video where a man used it to read what his iPhone was doing, and also to run commands to his iPhone in turn.</p>
+				<p>  Apart from the Refreshing Braille displays, most phones have begun to adopt some form of Accessibility.  Blackberry phones have options for hearing, vision, mobility, cognitive, and speech disabilities.  iPhone lists hearing, vision, and cognitive solutions as well.  Android is working toward the same direction as the others, with a special note to Google's work in general.  They are coming out with ChromeVox which will be a screenreader built for web, integrated right into Chrome.  Additionally they have improved most of their services, and even put in the automatic subtitle generation for YouTube.</p>
+				<p>4) One app I came across during my research was WalkyTalky.  It is an app that updates the user on their location, and can even set a destination and work in a Walking directions mode.  Seems pretty cool.  Another app is Wireless Accessibility, apparently 10 features in one app: Phone, Contacts, SMS, Alarm, Calendar, Email, Web, Where am I, Apps and Settings.  It simplifies the interface and uses voice to help the user traverse the phone easier.</p>
+            </div>
+            <div data-role="collapsible">
+                <h3>Week 3 Discussion</h3>
+                <p>Week 3 incoming!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="main.js"></script>
+</body>
+</html>

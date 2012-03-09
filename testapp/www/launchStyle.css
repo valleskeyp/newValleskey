@@ -1,0 +1,22 @@
+@charset "UTF-8";
+h1 {
+	text-align:center;
+}
+#launch p {
+    text-align:center;
+}
+#geo p {
+    text-align:center;
+    color:#000;
+    text-shadow: 1px 1px #444, -1px -1px white;
+}
+#map img {
+    padding: 2px;
+    background-color: #999999;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow:inset 0 0 10px #000000;
+    -webkit-box-shadow:inset 0 0 10px #000000;
+    box-shadow:inset 0 0 10px #000000;
+} 
