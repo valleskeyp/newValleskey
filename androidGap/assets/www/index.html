@@ -14,8 +14,8 @@
 		<h1>Peter Valleskey</h1>
 		<h3>AVF 3/2012</h3>
 	</div>
-	<div data-role="content">
-		<ul data-role="listview" data-divider-theme="d">
+	<div class="homePage" data-role="content">
+		<ul data-role="listview" data-divider-theme="d" data-inset="true">
 			<li data-role="list-divider"></li>
 			<li>
 				<h1>Crud Apps</h1>
@@ -26,27 +26,41 @@
 			<li>
 				<h1>Native Feature Demos</h1>
 				<p><a id="example1" data-role="button" data-inline="true" href="#">Notification Example</a></p>
-				<p><a id="example2" data-role="button" data-inline="true" href="#geo">Geolocation Example</a></p>
+				<p><a id="example2" data-role="button" data-inline="true" data-transition="slideup" href="#geo">Geolocation Example</a></p>
 			</li>
 			<li data-role="list-divider"></li>
 			<li>
+                <h1>Week 3 Demos</h1>
+                <p><a data-role="button" data-inline="true" data-transition="slideup" href="#comp">Compass Example</a></p>
+                <p><a id="example4" data-role="button" data-inline="true" href="#">Connection Example</a></p>
+            </li>
+			<li data-role="list-divider"></li>
+			<li>
 				<h1>Discussion posts and videos</h1>
-				<p><a data-role="button" data-inline="true" href="#discussions">Discussions</a></p>
+				<p><a data-role="button" data-inline="true" data-transition="slideup" href="#discussions">Discussions</a></p>
 			</li>
 			<li data-role="list-divider"></li>
 		</ul>
 	</div>
 </div>
-<div data-role="page" id="geo" data-add-back-btn="true">
-    <div data-role="header" data-position="fixed">
-        <h1>Peter Valleskey</h1>
-        <h3>AVF 3/2012</h3>
-    </div>
+<div data-role="page" id="geo" class="examplePage">
     <div data-role="content">
-        <div><p>Current User Location</p></div>
-        <div id="map"></div>
+        <ul data-role="listview" data-inset="true">
+            <li><p>Current User Location</p></li>
+            <li id="map"></li>
+            <li><div><a data-role="button" href="#" data-rel="back">Go Back</a></div></li>
+        </ul>
     </div>
 </div>
+<div data-role="page" id="comp" class="examplePage">
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+            <li><p>User Current Direction</p></li>
+            <li><p id="compass">Compass couldn't start, sorry!</p></li>
+            <li><div><a data-role="button" href="#" data-rel="back">Go Back</a></div></li>
+        </ul>
+    </div>
+</div>  
     
 <div data-role="page" id="discussions" data-add-back-btn="true">
     <div data-role="header" data-position="fixed">
@@ -56,7 +70,7 @@
 	<div data-role="content">
         <div data-role="collapsible-set" data-content-theme="d">
             <div data-role="collapsible" data-collapsed="true">
-                <h3>Week 1 Discussion</h3>
+                <h1>Week 1 Discussion</h1>
                 <p>1) Compass, accelerometer, camera, audio, geo-location, video, and more (especially with phonegap).</p>
                 <p>2) Of these most don't seem to fit well with a basic crud functioning app, but the camera might be useful in my app.</p>
                 <p>3) In regards to workflow, I just read/watch all materials for the week as early as possible.  Then I can gauge decently how much time I will need.  After that it is simply getting started and sticking to it at a regular pace, keeping distractions to a minimum.</p>
@@ -64,7 +78,7 @@
                 <p>5) As my old app is working, I'll probably leave it alone.  As for revising my app, I look forward to figuring out the best features to incorporate into it.</p>
             </div>
             <div data-role="collapsible">
-                <h3>Week 2 Discussion</h3>
+                <h1>Week 2 Discussion</h1>
                 <p>1) What I can do in my webpages is keeping the code clean and using the right elements where they belong.  Elements like alt tags, headings, lists, forms (label inputs with meaning!), ect.  Elements the reader goes through should be able to cue the user on what to do next, without nearby visual aids.</p>
 				<p>2) One thing that I saw in a video was how dynamic content was relayed to the user.  If new content is injected, there is a way for that content to be read to, or alert, the user.  But one thing to keep in mind is that if content is updated in a rapid way, it could result in lost information to the user, or even a garbled mess.  To work with this, content should be updated in a way that the user will be able to absorb new information at their own pace, resulting in all information being available to each type of user.</p>
 				<p>3) Refreshing Braille displays are one type of device made for accessability.  The work they do is giving a physical way for people to read (through Braille) what is currently on a computer screen.  I saw a video where a man used it to read what his iPhone was doing, and also to run commands to his iPhone in turn.</p>
@@ -72,7 +86,7 @@
 				<p>4) One app I came across during my research was WalkyTalky.  It is an app that updates the user on their location, and can even set a destination and work in a Walking directions mode.  Seems pretty cool.  Another app is Wireless Accessibility, apparently 10 features in one app: Phone, Contacts, SMS, Alarm, Calendar, Email, Web, Where am I, Apps and Settings.  It simplifies the interface and uses voice to help the user traverse the phone easier.</p>
             </div>
             <div data-role="collapsible">
-                <h3>Week 3 Discussion</h3>
+                <h1>Week 3 Discussion</h1>
                 <p>Week 3 incoming!</p>
             </div>
         </div>
