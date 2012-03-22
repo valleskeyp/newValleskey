@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* Peter Valleskey */
+
+
+.ui-field-contain div.ui-slider-switch {
+	width: 50%;
+}
+h1 {
+	text-align:center;
+}
+ul {
+	list-style:none;
+}
+li#list {
+	border-top:solid;
+	border-color:#000;
+	padding:10px;
+}
+legend {
+	text-align:center;
+}
+a:link, a:visited {
+	text-decoration:none;
+}
+body {
+	background-image:url(bg.jpg);
+}
+#logo img {
+	border-radius: 6px;
+	box-shadow: 2px 3px 0 0 rgba(72, 72, 72, 1);
+	max-width: 100%;
+}
+.ui-body-c {
+	color: #FFF;
+	text-shadow: 0 1px 0 black;
+}
+.ui-body-c input {
+	color: #333;
+	text-shadow: 0 1px 0 white;
+}
+label.ui-input-text {
+	color:#FFF;
+}
+#comments {
+	color:#000;
+}
+.color {
+	color: #333;
+	text-shadow: 0 1px 0 white;
+}
+.error{
+	display:block;
+	margin:10px 0;
+	color:#cc0000;
+}
+.ui-page {	
+	background: -moz-linear-gradient(top,  rgba(61,61,61,0.8) 0%, rgba(57,57,57,0) 6%, rgba(0,0,0,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(61,61,61,0.8)), color-stop(6%,rgba(57,57,57,0)), color-stop(100%,rgba(0,0,0,0)));
+	background: -webkit-linear-gradient(top,  rgba(61,61,61,0.8) 0%,rgba(57,57,57,0) 6%,rgba(0,0,0,0) 100%);
+	background: -o-linear-gradient(top,  rgba(61,61,61,0.8) 0%,rgba(57,57,57,0) 6%,rgba(0,0,0,0) 100%);
+	background: -ms-linear-gradient(top,  rgba(61,61,61,0.8) 0%,rgba(57,57,57,0) 6%,rgba(0,0,0,0) 100%);
+	background: linear-gradient(top,  rgba(61,61,61,0.8) 0%,rgba(57,57,57,0) 6%,rgba(0,0,0,0) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc3d3d3d', endColorstr='#00000000',GradientType=0 );
+}
+#gallery .ui-grid-b div {
+	text-align:center;
+}

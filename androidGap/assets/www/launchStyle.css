@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1 {
 	text-align:center;
 }
@@ -9,6 +10,41 @@ h1 {
 }
 .homePage {
     display:inline-block;
+}
+.homePage section {
+    display:inline-block;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
+    .homePage ul {
+        width:400px;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
+    .homePage ul {
+        width:350px;
+    }
+    .discList {
+        height:173px;
+    }
+    .discList a {
+        vertical-align:-55px;
+    }
+}
+@media only screen and (max-device-width: 350px) {
+    .homePage ul {
+        width:250px;
+    }
+}
+@media only screen and (min-device-width: 440px) {
+    .homePage ul {
+        width:200px;
+    }
+    .discList {
+        height:125px;
+    }
+    .discList a {
+        vertical-align:-58px;
+    }
 }
 .examplePage {
     text-align:center;
@@ -22,7 +58,7 @@ h1 {
     color:#000;
     text-shadow: 1px 1px #444, -1px -1px white;
 }
-.examplePage li:last-child {
+.examplePage li {
     text-align:center;
 }
 body {
@@ -30,7 +66,4 @@ body {
 }
 .examplePage ul {
     width: 280px;
-}
-#compass {
-	font-size:12px;
 }

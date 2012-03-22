@@ -122,7 +122,6 @@ function accelSuccess(acceleration) {
     var acc = 'Acceleration X: ' + acceleration.x + '<br />' +
     'Acceleration Y: ' + acceleration.y + '<br />' +
     'Acceleration Z: ' + acceleration.z + '<br />';
-    $("#accel").html("<p text-align='center'>" + acc + "</p>");
     var zRating = acceleration.z;
     if(zRating > 0.25) { //positive towards user
         window.scrollBy(00,-20); // horizontal , vertical

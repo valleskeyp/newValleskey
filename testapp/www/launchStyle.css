@@ -11,6 +11,41 @@ h1 {
 .homePage {
     display:inline-block;
 }
+.homePage section {
+    display:inline-block;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
+    .homePage ul {
+        width:400px;
+    }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
+    .homePage ul {
+        width:350px;
+    }
+    .discList {
+        height:173px;
+    }
+    .discList a {
+        vertical-align:-55px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width:480px) and (orientation:portrait) {
+    .homePage ul {
+        width:250px;
+    }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation:landscape) {
+    .homePage ul {
+        width:200px;
+    }
+    .discList {
+        height:173px;
+    }
+    .discList a {
+        vertical-align:-55px;
+    }
+}
 .examplePage {
     text-align:center;
 }
@@ -26,11 +61,6 @@ h1 {
 .examplePage li {
     text-align:center;
 }
-.longText p {
-    white-space:normal;
-    font-size:16px;
-    
-}
 body {
     background-color:#dddddd;
 }
@@ -40,4 +70,9 @@ body {
 .longText span {
     color:red;
     display:block;
+}
+.longText p {
+    white-space:normal;
+    font-size:16px;
+    
 }
